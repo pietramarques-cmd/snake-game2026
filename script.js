@@ -70,7 +70,7 @@ function updateGame() {
 
   if (isCollision(nextHead.x, nextHead.y)) {
     isGameOver = true;
-    setStatus('Game over! Pressione espaço para reiniciar');
+    setStatus('GAME OVER! Pressione espaço para reiniciar');
     return;
   }
 
@@ -124,7 +124,7 @@ function drawSnake() {
     const y = segment.y * tileSize;
     const size = tileSize - 2;
 
-    ctx.fillStyle = index === 0 ? '#a7f3d0' : '#34d399';
+    ctx.fillStyle = index === 0 ? '#fab4dd' : '#e627c6';
     ctx.fillRect(x + 1, y + 1, size, size);
   });
 }
